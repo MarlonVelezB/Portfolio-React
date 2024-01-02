@@ -1,0 +1,19 @@
+/* ALGUNOS ESTILOS SE APLICAN POR DEFECTO GRACIAS AL index.css*/
+.button-custom {
+    margin: 20px auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.button-custom:hover {
+    transition: .5s;
+    transform: translateY(-5px);
+}
+
+.button-custom:not(:hover) {
+    transition: .5s;
+    transform: translateY(0px);
+}
+
+.button-custom:active {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
