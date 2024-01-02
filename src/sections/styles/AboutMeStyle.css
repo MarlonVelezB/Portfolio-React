@@ -1,0 +1,64 @@
+.about-me-container {
+    margin: 100px 100px auto;
+}
+
+.about-me-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info {
+    padding: 50px;
+}
+
+.info h2 {
+    color: var(--color-primary);
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 35px;
+    padding: 10px;
+}
+
+.about-me-container img {
+    width: 40vw;
+    height: 90vh;
+}
+
+.skills-container {
+    padding: 10px;
+}
+
+.technologies {
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+}
+
+.technologies img {
+    width:4vw;
+    height: 5vh;
+    align-self: flex-start;
+}
+
+.technologies img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+  
+/*
+<a href="https://iconscout.com/icons/java" class="text-underline font-size-sm" target="_blank">Java</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a> 
+<a href="https://iconscout.com/icons/react" class="text-underline font-size-sm" target="_blank">React</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm" target="_blank">Icon Mafia</a>
+<a href="https://iconscout.com/icons/postgresql" class="text-underline font-size-sm" target="_blank">Postgresql</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
+<a href="https://iconscout.com/icons/mysql" class="text-underline font-size-sm" target="_blank">Mysql</a> by <a href="https://iconscout.com/contributors/icon-54" class="text-underline font-size-sm">Icon 54</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
+<a href="https://iconscout.com/icons/git" class="text-underline font-size-sm" target="_blank">Git</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm" target="_blank">Icon Mafia</a>
+<a href="https://iconscout.com/icons/javascript" class="text-underline font-size-sm" target="_blank">Javascript</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
+<a href="https://iconscout.com/icons/typescript" class="text-underline font-size-sm" target="_blank">Typescript</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
+<a href="https://iconscout.com/icons/html" class="text-underline font-size-sm" target="_blank">Html</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
+<a href="https://iconscout.com/icons/angular" class="text-underline font-size-sm" target="_blank">Angular</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
+*/
