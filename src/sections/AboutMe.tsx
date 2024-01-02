@@ -1,24 +1,32 @@
 import './styles/AboutMeStyle.css';
 import imgAboutMe from '../assets/img-me.png';
-import reactIcon from '../assets/svg/react-icon.svg'
-import angularIcon from '../assets/svg/angular-icon.svg'
-import gitIcon from '../assets/svg/git-icon.svg'
-import htmlIcon from '../assets/svg/html-icon.svg'
-import cssIcon from '../assets/svg/css-icon.svg'
-import jsIcon from '../assets/svg/javascript-icon.svg'
-import tsIcon from '../assets/svg/typescript-icon.svg'
-import springIcon from '../assets/svg/spring-icon.svg'
-import javaIcon from '../assets/svg/java-icon.svg'
-import postgresIcon from '../assets/svg/postgresql-icon.svg'
-import mysqlIcon from '../assets/svg/mysql-icon.svg'
-import { ButtonCustom } from '../components/ButtonCustom';
+import reactIcon from '../assets/svg/react-icon.svg';
+import angularIcon from '../assets/svg/angular-icon.svg';
+import gitIcon from '../assets/svg/git-icon.svg';
+import htmlIcon from '../assets/svg/html-icon.svg';
+import cssIcon from '../assets/svg/css-icon.svg';
+import jsIcon from '../assets/svg/javascript-icon.svg';
+import tsIcon from '../assets/svg/typescript-icon.svg';
+import springIcon from '../assets/svg/spring-icon.svg';
+import javaIcon from '../assets/svg/java-icon.svg';
+import postgresIcon from '../assets/svg/postgresql-icon.svg';
+import mysqlIcon from '../assets/svg/mysql-icon.svg';
+//Soft Skills
+import adaptationIcon from '../assets/svg/adaptation-icon.svg';
+import communicationIcon from '../assets/svg/communication-icon.svg';
+import leadershipIcon from '../assets/svg/leadership-icon.svg';
+import openMindIcon from '../assets/svg/open-mind-icon.svg';
+import teamWorkIcon from '../assets/svg/team-work-icon.svg';
+import personalDevolpIcon from '../assets/svg/personal-develoment-icon.svg';
+import onTimeIcon from '../assets/svg/worker-on-time-icon.svg';
+import problemSolvingIcon from '../assets/svg/problem-solving-icon.svg';
 
-type TechnicalSkills = {
+type Skills = {
     name: string;
     icon: string;
 }
 export function AboutMe (){
-    const technicalSkills: TechnicalSkills[] = [
+    const technicalSkills: Skills[] = [
         {
             name: 'react',
             icon: reactIcon,
@@ -64,6 +72,41 @@ export function AboutMe (){
             icon: gitIcon,
         },
     ];
+
+    const softSkills: Skills[] = [
+        {
+            name: 'Adaptability',
+            icon: adaptationIcon
+        },
+        {
+            name: 'Communication',
+            icon: communicationIcon
+        },
+        {
+            name: 'Problem Solving',
+            icon: problemSolvingIcon
+        },
+        {
+            name: 'Leadership',
+            icon: leadershipIcon
+        },
+        {
+            name: 'Open Mind',
+            icon: openMindIcon
+        },
+        {
+            name: 'Teamwork',
+            icon: teamWorkIcon
+        },
+        {
+            name: 'Personal Growth',
+            icon: personalDevolpIcon
+        },
+        {
+            name: 'Punctuality',
+            icon: onTimeIcon
+        },
+    ]
     
     return (
         <div className="about-me-container">
@@ -87,6 +130,16 @@ export function AboutMe (){
                         <div className="technologies">
                             {technicalSkills.map((technical) => (
                                 <img src={technical.icon} alt={technical.name} />
+                            ))}
+                        </div>
+                        <br/>
+                        <h3>Soft Skills</h3>
+                        <div className="softskills-container">
+                            {softSkills.map((softSkill) => (
+                                <div className='softskills'>
+                                    <img src={softSkill.icon} alt={softSkill.name} />
+                                    <span className='tooltip'>{softSkill.name}</span>
+                                </div>
                             ))}
                         </div>
                     </div>
