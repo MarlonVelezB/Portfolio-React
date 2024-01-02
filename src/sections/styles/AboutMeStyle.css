@@ -32,6 +32,7 @@
 
 .skills-container {
     padding: 10px;
+    margin-top: 30px;
 }
 
 .technologies {
@@ -46,19 +47,52 @@
     align-self: flex-start;
 }
 
-.technologies img:hover {
+.skills-container img:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
+
+.softskills-container {
+    display: flex;
+}
   
-/*
-<a href="https://iconscout.com/icons/java" class="text-underline font-size-sm" target="_blank">Java</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a> 
-<a href="https://iconscout.com/icons/react" class="text-underline font-size-sm" target="_blank">React</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm" target="_blank">Icon Mafia</a>
-<a href="https://iconscout.com/icons/postgresql" class="text-underline font-size-sm" target="_blank">Postgresql</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
-<a href="https://iconscout.com/icons/mysql" class="text-underline font-size-sm" target="_blank">Mysql</a> by <a href="https://iconscout.com/contributors/icon-54" class="text-underline font-size-sm">Icon 54</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
-<a href="https://iconscout.com/icons/git" class="text-underline font-size-sm" target="_blank">Git</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm" target="_blank">Icon Mafia</a>
-<a href="https://iconscout.com/icons/javascript" class="text-underline font-size-sm" target="_blank">Javascript</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
-<a href="https://iconscout.com/icons/typescript" class="text-underline font-size-sm" target="_blank">Typescript</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
-<a href="https://iconscout.com/icons/html" class="text-underline font-size-sm" target="_blank">Html</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
-<a href="https://iconscout.com/icons/angular" class="text-underline font-size-sm" target="_blank">Angular</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
-*/
+.softskills {
+    position: relative;
+    margin-right: 10px;
+}
+  
+.softskills img {
+    background-color: var(--color-primary);
+    width: 3vw;
+    height: 5vh;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 20%;
+}
+  
+.tooltip {
+    visibility: hidden;
+    width: 150px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -70px;
+    opacity: 0;
+    transition: opacity 0.3s, top 0.3s;
+}
+  
+.softskills:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    /*  Se está calculando un valor que es el 100% de la altura del contenedor 
+    principal más 5 píxeles adicionales. Esto crea un espacio adicional entre la 
+    parte inferior del contenedor principal (la imagen en este caso) y la parte 
+    superior del tooltip. */
+    top: calc(100% + 5px);
+}
