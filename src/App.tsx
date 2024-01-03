@@ -4,6 +4,7 @@
 import './App.css'
 import { Banner } from './components/Banner'
 import { AboutMe } from './sections/AboutMe'
+import { MyServices } from './sections/MyServices'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -32,6 +33,7 @@ function App() {
       </p> */}
       <Banner />
       <AboutMe />
+      <MyServices />
     </>
   )
 }
