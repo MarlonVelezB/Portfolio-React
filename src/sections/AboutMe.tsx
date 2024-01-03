@@ -25,7 +25,7 @@ type Skills = {
     name: string;
     icon: string;
 }
-export function AboutMe (){
+export function AboutMe() {
     const technicalSkills: Skills[] = [
         {
             name: 'react',

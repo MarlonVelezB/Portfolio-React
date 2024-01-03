@@ -1,5 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  transition: .5s;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Exo', sans-serif;
+  min-width: 320px;
+  min-height: 100vh;
   line-height: 1.5;
   font-weight: 400;
   overflow-x: hidden;
@@ -13,6 +27,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
 
 /* Crear una barra de desplazamiento personalizada */
 ::-webkit-scrollbar {
@@ -34,19 +50,17 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
   color: var(--color-primary);
   text-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+h2 {
+  font-size: 50px;
+  color: var(--color-primary);
 }
 
 button {
