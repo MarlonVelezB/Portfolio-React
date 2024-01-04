@@ -2,12 +2,6 @@
 
 :root {
   transition: .5s;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  box-sizing: border-box;
   border: none;
   outline: none;
   scroll-behavior: smooth;
@@ -15,7 +9,6 @@
   min-width: 320px;
   min-height: 100vh;
   line-height: 1.5;
-  font-weight: 400;
   overflow-x: hidden;
   /* color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -28,6 +21,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
 
 
 /* Crear una barra de desplazamiento personalizada */
@@ -43,13 +40,8 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
   text-decoration: inherit;
 }
-a:hover {
-  color: #535bf2;
-}
-
 
 h1 {
   font-size: 3.2em;
@@ -79,8 +71,11 @@ button {
 
 /* @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: #101417;
     background-color: #ffffff;
+  }
+  h1{
+    color: #ffffff;
   }
   a:hover {
     color: #747bff;
