@@ -3,6 +3,7 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import { Banner } from './components/Banner'
+import { NavBar } from './components/NavBar'
 import { AboutMe } from './sections/AboutMe'
 import { MyServices } from './sections/MyServices'
 
@@ -31,8 +32,9 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p> */}
+      <NavBar />
       <Banner />
-      <AboutMe />
+       <AboutMe />
       <MyServices />
     </>
   )

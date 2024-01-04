@@ -7,8 +7,8 @@
     background-color: transparent;
     background-image: url('../../assets/background-light.svg');
     background-position: center;
-    background-size: cover; /* Cambiado a cover para cubrir todo el ancho del div */
-    height: 100vh; /* Añadido para ocupar el 100% de la altura del viewport */
+    background-size: cover;
+    height: 100vh;
 }
 
 .container-banner h2 {
