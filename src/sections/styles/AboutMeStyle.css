@@ -1,22 +1,30 @@
 .about-me-container {
-    margin: 100px 100px auto;
+    padding: 144px 72px 288px;
+    width: 100%;
+    background-color: var(--color-primary);
 }
 
 .about-me-content {
     display: flex;
+    padding: auto;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .info {
-    padding: 50px;
+    flex: none;
+    width: 60%;
+    color: #ffffff;
 }
 
 .info h2 {
+    text-align: center;
     margin-bottom: 10px;
+    color: #ffffff
 }
 
 .info p {
+    text-align: center;
     font-size: 18px;
     margin-top: 30px;
     line-height: 35px;
@@ -60,7 +68,7 @@
 }
   
 .softskills img {
-    background-color: var(--color-primary);
+    background-color: #ffffff;
     width: 3vw;
     height: 5vh;
     margin: 10px;

@@ -34,7 +34,7 @@ function App() {
       </p> */}
       <NavBar />
       <Banner />
-       <AboutMe />
+      <AboutMe />
       <MyServices />
     </>
   )
