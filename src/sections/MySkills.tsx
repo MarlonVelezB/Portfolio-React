@@ -1,10 +1,10 @@
-import './styles/MyServicesStyle.css';
+import './styles/MySkillsStyle.css';
 import websiteDesign from '../assets/svg/web-design-service.svg';
 import appDesign from '../assets/svg/app-design-service.svg';
 import maintenance from '../assets/svg/maintenance-icon.svg';
 import { backSkills, frontSkills, mobileSkills } from '../utils/Skills';
 
-export function MyServices() {
+export function MySkills() {
     return (
         <div className='services-container'>
             <div className="skills">
