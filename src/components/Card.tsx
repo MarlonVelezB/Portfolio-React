@@ -7,7 +7,9 @@ type CardProps = {
 export const Card = ({children}: CardProps) => {
     return (
         <div className="card">
-            {children}
+            <div className="cardContent">
+                {children}
+            </div>
         </div>
     )
 }

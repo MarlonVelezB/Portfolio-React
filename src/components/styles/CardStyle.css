@@ -1,14 +1,24 @@
 .card {
-    display: inline-block;
-    width: 22vw;
-    height: 50vh;
-    padding: 20px;
-    margin: 50px;
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-    border-radius: 5%;
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    grid-area: auto;
+    padding: 70px 45px;
     text-align: center;
+    border-radius: 0%;
+    border: 2px solid #3498db; /* 2px de ancho, estilo sólido y color azul (#3498db) */
 }
 
-.card:hover{
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+.cardContent img {
+    width: 7vw;
+    height: auto;
 }
+
+.cardContent h3 {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+}
+
+.cardContent p {
+    line-height: 30px;
+} 
